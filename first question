@@ -1,0 +1,7 @@
+lass solution:
+    def twosum(self,num,target):
+        nums_list = {}
+        for i in range(len(nums)):
+            if target - nums[i] in nums_list:
+                return [nums_list[target - nums[i]]], i]
+            nums_list[nums[i]] = i
